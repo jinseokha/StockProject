@@ -11,6 +11,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.devseok.stockproject.feature.home.HomePage
+import com.devseok.stockproject.feature.main.MainPage
+import com.devseok.stockproject.feature.main.MainPageBaseVM
 import com.devseok.stockproject.ui.theme.StockProjectTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,7 +21,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         //enableEdgeToEdge()
         setContent {
-
+            MainPage()
            /* StockProjectTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
