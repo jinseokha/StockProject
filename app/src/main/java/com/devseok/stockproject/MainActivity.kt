@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.devseok.stockproject.db.StockDatabase
 import com.devseok.stockproject.feature.home.HomePage
 import com.devseok.stockproject.feature.main.MainPage
 import com.devseok.stockproject.feature.main.MainPageBaseVM
@@ -31,6 +32,11 @@ class MainActivity : ComponentActivity() {
                 }
             }*/
         }
+
+        // ex
+        /*var db: StockDatabase? = StockDatabase.getInstance(this)
+        val stockData = db!!.stockRepository().findByAll()*/
+
     }
 }
 
